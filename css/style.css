@@ -1,0 +1,127 @@
+html {
+  margin: 0;
+  padding: 0;
+  background: #bdc3c7;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #bdc3c7, #2c3e50);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  html h1 {
+    font-size: 40pt;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: #FFF; }
+  html .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20pt; }
+    html .controls .title {
+      font-size: 25pt;
+      text-align: center;
+      font-family: 'Sansita', sans-serif; }
+      @media (max-width: 550px) {
+        html .controls .title {
+          font-size: 20pt; } }
+    html .controls .val-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      html .controls .val-controls span {
+        text-align: center;
+        font-family: 'Sansita', sans-serif; }
+      html .controls .val-controls .value {
+        color: #FFF;
+        font-size: 30pt; }
+      html .controls .val-controls .clicks {
+        color: #FE2F83;
+        font-size: 30pt;
+        cursor: pointer;
+        -webkit-user-select: none;
+        /* Chrome/Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+ */ }
+    html .controls .break-controls {
+      padding-left: 2em;
+      padding-right: 2em; }
+      @media (max-width: 500px) {
+        html .controls .break-controls {
+          padding-left: 1em;
+          padding-right: 1em; } }
+    html .controls .session-controls {
+      padding-left: 2em;
+      padding-right: 2em; }
+      @media (max-width: 500px) {
+        html .controls .session-controls {
+          padding-left: 1em;
+          padding-right: 1em; } }
+  html .timer {
+    border: 10px solid #FE2F83;
+    cursor: pointer;
+    width: 420px;
+    height: 300px;
+    margin: auto;
+    clear: both;
+    border-radius: 5%;
+    position: relative;
+    overflow: hidden;
+    text-shadow: none;
+    margin-top: 2%;
+    background-color: #748092; }
+    @media (max-width: 500px) {
+      html .timer {
+        width: 90%; } }
+    html .timer .time-left {
+      top: 30%;
+      left: 50%;
+      margin-left: -125px;
+      width: 250px;
+      text-align: center;
+      font-size: 70px;
+      z-index: 4;
+      position: absolute;
+      font-family: 'Sansita', sans-serif; }
+    html .timer .status {
+      bottom: 25%;
+      left: 50%;
+      margin-left: -125px;
+      width: 250px;
+      text-align: center;
+      font-size: 35px;
+      z-index: 4;
+      position: absolute;
+      font-family: 'Satisfy', cursive;
+      color: #FFF; }
+    html .timer .fill {
+      width: 100%;
+      height: 0%;
+      position: absolute;
+      left: 0; }
+    html .timer .fill.session {
+      bottom: 0;
+      z-index: 2;
+      background-color: #FE6EA8; }
+    html .timer .fill.break {
+      top: 0;
+      z-index: 3;
+      background-color: #748092; }
+  html .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20pt;
+    font-family: 'Sansita', sans-serif; }
+    html .bottom .next {
+      margin-left: 4em;
+      margin-right: 4em;
+      cursor: pointer; }
+    html .bottom .reset {
+      margin-left: 4em;
+      margin-right: 4em;
+      color: #FFF;
+      cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

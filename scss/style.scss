@@ -1,0 +1,186 @@
+//Bright Pink
+$brightPink: #FE2F83;
+
+// Reset Margin and Padding and Add Gradient Background
+html {
+ margin: 0;
+ padding: 0;
+ background: #bdc3c7; /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #bdc3c7 , #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #bdc3c7 , #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // Pomodoro Clock Title
+    h1 {
+     font-size: 40pt;
+     font-family: 'Satisfy', cursive;
+     text-align: center;
+     color: #FFF;
+    }
+    // The Break and Session Time Controls Section
+    .controls {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 20pt;
+        // Break Time and Session Time Titles
+        .title {
+         font-size: 25pt;
+         text-align: center;
+         font-family: 'Sansita', sans-serif;
+            // Responsive font size for titles
+             @media (max-width: 550px) {
+                font-size: 20pt; 
+            }
+        }
+        // Row of Minus Number Plus 
+        .val-controls {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+            // Each item in Row of Minus Number Plus
+            span {
+             text-align: center;
+             font-family: 'Sansita', sans-serif;
+            }
+            // The Number between the Plus and Minus Buttons
+            .value {
+             color: #FFF;
+             font-size: 30pt;
+            }
+            // Plus and Minus Buttons
+            .clicks {
+             color: $brightPink;
+             font-size: 30pt;
+             cursor: pointer;
+             -webkit-user-select: none; /* Chrome/Safari */        
+             -moz-user-select: none; /* Firefox */
+             -ms-user-select: none; /* IE10+ */
+
+            }
+        }
+        // The Break box of Title and Buttons
+        .break-controls {
+         padding-left: 2em;
+         padding-right: 2em;
+            //Responsive time settings
+           @media (max-width: 500px) {
+                padding-left: 1em;
+                padding-right: 1em;
+                
+            }
+        }
+        // The Session box of Title and Buttons
+        .session-controls {
+         padding-left: 2em;
+         padding-right: 2em;
+                //Responsive time settings
+            @media (max-width: 500px) {
+                padding-left: 1em;
+                padding-right: 1em;
+                
+            }
+        }
+    }
+
+
+    // Timer Box
+    .timer {
+     border: 10px solid $brightPink;
+     cursor:pointer;
+     width: 420px;
+     height: 300px;
+     margin: auto;
+     clear: both;
+     border-radius: 5%;
+     position: relative;
+     overflow: hidden;
+     text-shadow: none;
+     margin-top: 2%;
+     background-color: #748092;
+        // Responsive box
+        @media (max-width: 500px) {
+            width: 90%;
+        }
+        // Displays the time in the center of the box
+        .time-left {
+         top: 30%;
+         left: 50%;
+         margin-left: -125px;
+         width: 250px;
+         text-align: center;
+         font-size: 70px;
+         z-index: 4;
+         position: absolute;
+         font-family: 'Sansita', sans-serif;
+        }
+
+
+        // Start Stop text
+        .status {
+         bottom: 25%;
+         left: 50%;
+         margin-left: -125px;
+         width: 250px;
+         text-align: center;
+         font-size: 35px;
+         z-index: 4;
+         position: absolute;
+         font-family: 'Satisfy', cursive;
+         color: #FFF;
+
+        }
+        // Fill Animation settings
+        .fill {
+         width: 100%;
+         height: 0%;
+         position:absolute;
+         left:0;
+
+        }
+        // Background fill color during the session
+        .fill.session {
+         bottom:0;
+         z-index:2;
+         background-color: #FE6EA8;
+        }
+        // Background fill color during the break
+        .fill.break {
+         top:0;
+         z-index:3;
+         background-color:#748092;
+        }
+    }
+    
+
+    // Next and Reset Section
+    .bottom {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 20pt;
+     font-family: 'Sansita', sans-serif;
+
+
+        .next {
+         margin-left: 4em;
+         margin-right: 4em;
+         cursor:pointer;
+        }
+
+        .reset {
+         margin-left: 4em;
+         margin-right: 4em;
+         color: #FFF;
+         cursor:pointer;
+        } 
+    }
+
+}
+
+
+      
+  
+
+
+
+
+    
